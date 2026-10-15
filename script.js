@@ -7,378 +7,378 @@
 // - Sửa từ: Chỉnh sửa trực tiếp giá trị của các trường japanese, hiragana, romaji hoặc meaning.
 // - Xóa từ: Xóa dòng hoặc object tương ứng khỏi mảng.
 const vocabulary = [
-    {
-        japanese: "ハンサム[な]",
-        hiragana: "ハンサム[な]",
-        romaji: ["hansamu [na]"],
-        meaning: ["đẹp trai"]
-    },
-    {
-        japanese: "きれい[な]",
-        hiragana: "きれい[な]",
-        romaji: ["kirei [na]"],
-        meaning: ["đẹp", "sạch"]
-    },
-    {
-        japanese: "静か[な]",
-        hiragana: "しずか[な]",
-        romaji: ["shizuka [na]"],
-        meaning: ["yên tĩnh"]
-    },
-    {
-        japanese: "にぎやか[な]",
-        hiragana: "にぎやか[な]",
-        romaji: ["nigiyaka [na]"],
-        meaning: ["náo nhiệt"]
-    },
-    {
-        japanese: "有名[な]",
-        hiragana: "ゆうめい[な]",
-        romaji: ["yūmei [na]"],
-        meaning: ["nổi tiếng"]
-    },
-    {
-        japanese: "親切[な]",
-        hiragana: "しんせつ[な]",
-        romaji: ["shinsetsu [na]"],
-        meaning: ["tốt bụng", "thân thiện"]
-    },
-    {
-        japanese: "元気[な]",
-        hiragana: "げんき[な]",
-        romaji: ["genki [na]"],
-        meaning: ["khỏe", "khỏe mạnh"]
-    },
-    {
-        japanese: "暇[な]",
-        hiragana: "ひま[な]",
-        romaji: ["hima [na]"],
-        meaning: ["rảnh rỗi"]
-    },
-    {
-        japanese: "便利[な]",
-        hiragana: "べんり[な]",
-        romaji: ["benri [na]"],
-        meaning: ["tiện lợi"]
-    },
-    {
-        japanese: "すてき[な]",
-        hiragana: "すてき[な]",
-        romaji: ["suteki [na]"],
-        meaning: ["đẹp", "hay", "tuyệt vời"]
-    },
-    {
-        japanese: "大きい",
-        hiragana: "おおきい",
-        romaji: ["ōkii"],
-        meaning: ["lớn", "to"]
-    },
-    {
-        japanese: "小さい",
-        hiragana: "ちいさい",
-        romaji: ["chiisai"],
-        meaning: ["bé", "nhỏ"]
-    },
-    {
-        japanese: "新しい",
-        hiragana: "あたらしい",
-        romaji: ["atarashii"],
-        meaning: ["mới"]
-    },
-    {
-        japanese: "古い",
-        hiragana: "ふるい",
-        romaji: ["furui"],
-        meaning: ["cũ"]
-    },
-    {
-        japanese: "いい（よい）",
-        hiragana: "いい（よい）",
-        romaji: ["ii", "yoi"],
-        meaning: ["tốt"]
-    },
-    {
-        japanese: "悪い",
-        hiragana: "わるい",
-        romaji: ["warui"],
-        meaning: ["xấu", "tệ"]
-    },
-    {
-        japanese: "暑い、熱い",
-        hiragana: "あつい",
-        romaji: ["atsui"],
-        meaning: ["nóng (thời tiết)", "nóng (đồ vật)"]
-    },
-    {
-        japanese: "寒い",
-        hiragana: "さむい",
-        romaji: ["samui"],
-        meaning: ["lạnh", "rét (thời tiết)"]
-    },
-    {
-        japanese: "冷たい",
-        hiragana: "つめたい",
-        romaji: ["tsumetai"],
-        meaning: ["lạnh", "buốt (khi chạm vào hoặc nếm)"]
-    },
-    {
-        japanese: "難しい",
-        hiragana: "むずかしい",
-        romaji: ["muzukashii"],
-        meaning: ["khó"]
-    },
-    {
-        japanese: "易しい",
-        hiragana: "やさしい",
-        romaji: ["yasashii"],
-        meaning: ["dễ"]
-    },
-    {
-        japanese: "高い",
-        hiragana: "たかい",
-        romaji: ["takai"],
-        meaning: ["đắt", "cao"]
-    },
-    {
-        japanese: "安い",
-        hiragana: "やすい",
-        romaji: ["yasui"],
-        meaning: ["rẻ"]
-    },
-    {
-        japanese: "低い",
-        hiragana: "ひくい",
-        romaji: ["hikui"],
-        meaning: ["thấp"]
-    },
-    {
-        japanese: "おもしろい",
-        hiragana: "おもしろい",
-        romaji: ["omoshiroi"],
-        meaning: ["thú vị", "hay"]
-    },
-    {
-        japanese: "おいしい",
-        hiragana: "おいしい",
-        romaji: ["oishii"],
-        meaning: ["ngon"]
-    },
-    {
-        japanese: "忙しい",
-        hiragana: "いそがしい",
-        romaji: ["isogashii"],
-        meaning: ["bận"]
-    },
-    {
-        japanese: "楽しい",
-        hiragana: "たのしい",
-        romaji: ["tanoshii"],
-        meaning: ["vui", "vui vẻ"]
-    },
-    {
-        japanese: "白い",
-        hiragana: "しろい",
-        romaji: ["shiroi"],
-        meaning: ["trắng"]
-    },
-    {
-        japanese: "黒い",
-        hiragana: "くろい",
-        romaji: ["kuroi"],
-        meaning: ["đen"]
-    },
-    {
-        japanese: "赤い",
-        hiragana: "あかい",
-        romaji: ["akai"],
-        meaning: ["đỏ"]
-    },
-    {
-        japanese: "青い",
-        hiragana: "あおい",
-        romaji: ["aoi"],
-        meaning: ["xanh da trời", "xanh lam"]
-    },
-    {
-        japanese: "桜",
-        hiragana: "さくら",
-        romaji: ["sakura"],
-        meaning: ["hoa anh đào", "cây anh đào"]
-    },
-    {
-        japanese: "山",
-        hiragana: "やま",
-        romaji: ["yama"],
-        meaning: ["núi"]
-    },
-    {
-        japanese: "町",
-        hiragana: "まち",
-        romaji: ["machi"],
-        meaning: ["thị trấn", "thị xã", "thành phố"]
-    },
-    {
-        japanese: "食べ物",
-        hiragana: "たべもの",
-        romaji: ["tabemono"],
-        meaning: ["đồ ăn", "thức ăn"]
-    },
-    {
-        japanese: "車",
-        hiragana: "くるま",
-        romaji: ["kuruma"],
-        meaning: ["xe ô tô"]
-    },
-    {
-        japanese: "所",
-        hiragana: "ところ",
-        romaji: ["tokoro"],
-        meaning: ["nơi", "chỗ"]
-    },
-    {
-        japanese: "寮",
-        hiragana: "りょう",
-        romaji: ["ryō"],
-        meaning: ["ký túc xá"]
-    },
-    {
-        japanese: "勉強",
-        hiragana: "べんきょう",
-        romaji: ["benkyō"],
-        meaning: ["học", "việc học"]
-    },
-    {
-        japanese: "生活",
-        hiragana: "せいかつ",
-        romaji: ["seikatsu"],
-        meaning: ["cuộc sống", "sinh hoạt"]
-    },
-    {
-        japanese: "[お]仕事",
-        hiragana: "[お]しごと",
-        romaji: ["[o]shigoto"],
-        meaning: ["công việc", "làm việc"]
-    },
-    {
-        japanese: "どう",
-        hiragana: "どう",
-        romaji: ["dō"],
-        meaning: ["thế nào", "như thế nào"]
-    },
-    {
-        japanese: "どんな～",
-        hiragana: "どんな～",
-        romaji: ["donna ~"],
-        meaning: ["~ như thế nào", "loại ~ nào"]
-    },
-    {
-        japanese: "どれ",
-        hiragana: "どれ",
-        romaji: ["dore"],
-        meaning: ["cái nào"]
-    },
-    {
-        japanese: "とても",
-        hiragana: "とても",
-        romaji: ["totemo"],
-        meaning: ["rất", "lắm"]
-    },
-    {
-        japanese: "あまり",
-        hiragana: "あまり",
-        romaji: ["amari"],
-        meaning: ["không ~ lắm (thường đi với phủ định)"]
-    },
-    {
-        japanese: "そして",
-        hiragana: "そして",
-        romaji: ["soshite"],
-        meaning: ["và", "thêm nữa", "sau đó"]
-    },
-    {
-        japanese: "～が、～",
-        hiragana: "～が、～",
-        romaji: ["~ ga, ~"],
-        meaning: ["~, nhưng ~"]
-    },
-    {
-        japanese: "お元気ですか。",
-        hiragana: "おげんきですか。",
-        romaji: ["ogenki desu ka"],
-        meaning: ["Anh/chị có khỏe không?"]
-    },
-    {
-        japanese: "そうですね。",
-        hiragana: "そうですね。",
-        romaji: ["sō desu ne"],
-        meaning: ["Thế nhỉ", "Để tôi xem", "Ừ nhỉ"]
-    },
-    {
-        japanese: "日本の生活に慣れましたか。",
-        hiragana: "にほんのせいかつになれましたか。",
-        romaji: ["Nihon no seikatsu ni naremashita ka"],
-        meaning: ["Anh/chị đã quen với cuộc sống ở Nhật chưa?"]
-    },
-    {
-        japanese: "[～、]もう一杯いかがですか。",
-        hiragana: "[～、]もういっぱい いかがですか。",
-        romaji: ["[~,] mō ippai ikaga desu ka"],
-        meaning: ["Anh/chị dùng thêm một chén [~] nữa được không ạ?"]
-    },
-    {
-        japanese: "いいえ、けっこうです。",
-        hiragana: "いいえ、けっこうです。",
-        romaji: ["iie, kekkō desu"],
-        meaning: ["Không, đủ rồi ạ", "Thôi, cảm ơn ạ"]
-    },
-    {
-        japanese: "もう～です[ね]。",
-        hiragana: "もう～です[ね]。",
-        romaji: ["mō ~ desu [ne]"],
-        meaning: ["Đã ~ rồi nhỉ", "Đã ~ rồi, đúng không ạ?"]
-    },
-    {
-        japanese: "そろそろ失礼します。",
-        hiragana: "そろそろしつれいします。",
-        romaji: ["sorosoro shitsurei shimasu"],
-        meaning: ["Đã đến lúc tôi phải xin phép", "Tôi xin phép về trước"]
-    },
-    {
-        japanese: "またいらっしゃってください。",
-        hiragana: "またいらっしゃってください。",
-        romaji: ["mata irasshatte kudasai"],
-        meaning: ["Lần sau anh/chị lại đến chơi nhé"]
-    },
-    {
-        japanese: "富士山",
-        hiragana: "ふじさん",
-        romaji: ["Fujisan"],
-        meaning: ["Núi Phú Sĩ (ngọn núi cao nhất Nhật Bản)"]
-    },
-    {
-        japanese: "琵琶湖",
-        hiragana: "びわこ",
-        romaji: ["Biwako"],
-        meaning: ["Hồ Biwa"]
-    },
-    {
-        japanese: "シャンハイ",
-        hiragana: "シャンハイ",
-        romaji: ["Shanhai"],
-        meaning: ["Thượng Hải (上海)"]
-    },
-    {
-        japanese: "「七人の侍」",
-        hiragana: "「しちにんのさむらい」",
-        romaji: ["Shichinin no Samurai"],
-        meaning: ["Bảy chàng võ sĩ Samurai (tên phim kinh điển của đạo diễn Kurosawa Akira)"]
-    },
-    {
-        japanese: "金閣寺",
-        hiragana: "きんかくじ",
-        romaji: ["Kinkakuji"],
-        meaning: ["Chùa Kinkaku-ji", "Chùa Vàng"]
-    }
+{
+    japanese: "ハンサム[な]",
+    hiragana: "ハンサム[な]",
+    romaji: ["hansamu [na]"],
+    meaning: ["đẹp trai"]
+},
+{
+    japanese: "きれい[な]",
+    hiragana: "きれい[な]",
+    romaji: ["kirei [na]"],
+    meaning: ["đẹp", "sạch"]
+},
+{
+    japanese: "静か[な]",
+    hiragana: "しずか[な]",
+    romaji: ["shizuka [na]"],
+    meaning: ["yên tĩnh"]
+},
+{
+    japanese: "にぎやか[な]",
+    hiragana: "にぎやか[な]",
+    romaji: ["nigiyaka [na]"],
+    meaning: ["náo nhiệt"]
+},
+{
+    japanese: "有名[な]",
+    hiragana: "ゆうめい[な]",
+    romaji: ["yūmei [na]"],
+    meaning: ["nổi tiếng"]
+},
+{
+    japanese: "親切[な]",
+    hiragana: "しんせつ[な]",
+    romaji: ["shinsetsu [na]"],
+    meaning: ["tốt bụng", "thân thiện"]
+},
+{
+    japanese: "元気[な]",
+    hiragana: "げんき[な]",
+    romaji: ["genki [na]"],
+    meaning: ["khỏe", "khỏe mạnh"]
+},
+{
+    japanese: "暇[な]",
+    hiragana: "ひま[な]",
+    romaji: ["hima [na]"],
+    meaning: ["rảnh rỗi"]
+},
+{
+    japanese: "便利[な]",
+    hiragana: "べんり[な]",
+    romaji: ["benri [na]"],
+    meaning: ["tiện lợi"]
+},
+{
+    japanese: "すてき[な]",
+    hiragana: "すてき[な]",
+    romaji: ["suteki [na]"],
+    meaning: ["đẹp", "hay", "tuyệt vời"]
+},
+{
+    japanese: "大きい",
+    hiragana: "おおきい",
+    romaji: ["ōkii"],
+    meaning: ["lớn", "to"]
+},
+{
+    japanese: "小さい",
+    hiragana: "ちいさい",
+    romaji: ["chiisai"],
+    meaning: ["bé", "nhỏ"]
+},
+{
+    japanese: "新しい",
+    hiragana: "あたらしい",
+    romaji: ["atarashii"],
+    meaning: ["mới"]
+},
+{
+    japanese: "古い",
+    hiragana: "ふるい",
+    romaji: ["furui"],
+    meaning: ["cũ"]
+},
+{
+    japanese: "いい（よい）",
+    hiragana: "いい（よい）",
+    romaji: ["ii", "yoi"],
+    meaning: ["tốt"]
+},
+{
+    japanese: "悪い",
+    hiragana: "わるい",
+    romaji: ["warui"],
+    meaning: ["xấu", "tệ"]
+},
+{
+    japanese: "暑い、熱い",
+    hiragana: "あつい",
+    romaji: ["atsui"],
+    meaning: ["nóng (thời tiết)", "nóng (đồ vật)"]
+},
+{
+    japanese: "寒い",
+    hiragana: "さむい",
+    romaji: ["samui"],
+    meaning: ["lạnh", "rét (thời tiết)"]
+},
+{
+    japanese: "冷たい",
+    hiragana: "つめたい",
+    romaji: ["tsumetai"],
+    meaning: ["lạnh", "buốt (khi chạm vào hoặc nếm)"]
+},
+{
+    japanese: "難しい",
+    hiragana: "むずかしい",
+    romaji: ["muzukashii"],
+    meaning: ["khó"]
+},
+{
+    japanese: "易しい",
+    hiragana: "やさしい",
+    romaji: ["yasashii"],
+    meaning: ["dễ"]
+},
+{
+    japanese: "高い",
+    hiragana: "たかい",
+    romaji: ["takai"],
+    meaning: ["đắt", "cao"]
+},
+{
+    japanese: "安い",
+    hiragana: "やすい",
+    romaji: ["yasui"],
+    meaning: ["rẻ"]
+},
+{
+    japanese: "低い",
+    hiragana: "ひくい",
+    romaji: ["hikui"],
+    meaning: ["thấp"]
+},
+{
+    japanese: "おもしろい",
+    hiragana: "おもしろい",
+    romaji: ["omoshiroi"],
+    meaning: ["thú vị", "hay"]
+},
+{
+    japanese: "おいしい",
+    hiragana: "おいしい",
+    romaji: ["oishii"],
+    meaning: ["ngon"]
+},
+{
+    japanese: "忙しい",
+    hiragana: "いそがしい",
+    romaji: ["isogashii"],
+    meaning: ["bận"]
+},
+{
+    japanese: "楽しい",
+    hiragana: "たのしい",
+    romaji: ["tanoshii"],
+    meaning: ["vui", "vui vẻ"]
+},
+{
+    japanese: "白い",
+    hiragana: "しろい",
+    romaji: ["shiroi"],
+    meaning: ["trắng"]
+},
+{
+    japanese: "黒い",
+    hiragana: "くろい",
+    romaji: ["kuroi"],
+    meaning: ["đen"]
+},
+{
+    japanese: "赤い",
+    hiragana: "あかい",
+    romaji: ["akai"],
+    meaning: ["đỏ"]
+},
+{
+    japanese: "青い",
+    hiragana: "あおい",
+    romaji: ["aoi"],
+    meaning: ["xanh da trời", "xanh lam"]
+},
+{
+    japanese: "桜",
+    hiragana: "さくら",
+    romaji: ["sakura"],
+    meaning: ["hoa anh đào", "cây anh đào"]
+},
+{
+    japanese: "山",
+    hiragana: "やま",
+    romaji: ["yama"],
+    meaning: ["núi"]
+},
+{
+    japanese: "町",
+    hiragana: "まち",
+    romaji: ["machi"],
+    meaning: ["thị trấn", "thị xã", "thành phố"]
+},
+{
+    japanese: "食べ物",
+    hiragana: "たべもの",
+    romaji: ["tabemono"],
+    meaning: ["đồ ăn", "thức ăn"]
+},
+{
+    japanese: "車",
+    hiragana: "くるま",
+    romaji: ["kuruma"],
+    meaning: ["xe ô tô"]
+},
+{
+    japanese: "所",
+    hiragana: "ところ",
+    romaji: ["tokoro"],
+    meaning: ["nơi", "chỗ"]
+},
+{
+    japanese: "寮",
+    hiragana: "りょう",
+    romaji: ["ryō"],
+    meaning: ["ký túc xá"]
+},
+{
+    japanese: "勉強",
+    hiragana: "べんきょう",
+    romaji: ["benkyō"],
+    meaning: ["học", "việc học"]
+},
+{
+    japanese: "生活",
+    hiragana: "せいかつ",
+    romaji: ["seikatsu"],
+    meaning: ["cuộc sống", "sinh hoạt"]
+},
+{
+    japanese: "[お]仕事",
+    hiragana: "[お]しごと",
+    romaji: ["[o]shigoto"],
+    meaning: ["công việc", "làm việc"]
+},
+{
+    japanese: "どう",
+    hiragana: "どう",
+    romaji: ["dō"],
+    meaning: ["thế nào", "như thế nào"]
+},
+{
+    japanese: "どんな～",
+    hiragana: "どんな～",
+    romaji: ["donna ~"],
+    meaning: ["~ như thế nào", "loại ~ nào"]
+},
+{
+    japanese: "どれ",
+    hiragana: "どれ",
+    romaji: ["dore"],
+    meaning: ["cái nào"]
+},
+{
+    japanese: "とても",
+    hiragana: "とても",
+    romaji: ["totemo"],
+    meaning: ["rất", "lắm"]
+},
+{
+    japanese: "あまり",
+    hiragana: "あまり",
+    romaji: ["amari"],
+    meaning: ["không ~ lắm (thường đi với phủ định)"]
+},
+{
+    japanese: "そして",
+    hiragana: "そして",
+    romaji: ["soshite"],
+    meaning: ["và", "thêm nữa", "sau đó"]
+},
+{
+    japanese: "～が、～",
+    hiragana: "～が、～",
+    romaji: ["~ ga, ~"],
+    meaning: ["~, nhưng ~"]
+},
+{
+    japanese: "お元気ですか。",
+    hiragana: "おげんきですか。",
+    romaji: ["ogenki desu ka"],
+    meaning: ["Anh/chị có khỏe không?"]
+},
+{
+    japanese: "そうですね。",
+    hiragana: "そうですね。",
+    romaji: ["sō desu ne"],
+    meaning: ["Thế nhỉ", "Để tôi xem", "Ừ nhỉ"]
+},
+{
+    japanese: "日本の生活に慣れましたか。",
+    hiragana: "にほんのせいかつになれましたか。",
+    romaji: ["Nihon no seikatsu ni naremashita ka"],
+    meaning: ["Anh/chị đã quen với cuộc sống ở Nhật chưa?"]
+},
+{
+    japanese: "[～、]もう一杯いかがですか。",
+    hiragana: "[～、]もういっぱい いかがですか。",
+    romaji: ["[~,] mō ippai ikaga desu ka"],
+    meaning: ["Anh/chị dùng thêm một chén [~] nữa được không ạ?"]
+},
+{
+    japanese: "いいえ、けっこうです。",
+    hiragana: "いいえ、けっこうです。",
+    romaji: ["iie, kekkō desu"],
+    meaning: ["Không, đủ rồi ạ", "Thôi, cảm ơn ạ"]
+},
+{
+    japanese: "もう～です[ね]。",
+    hiragana: "もう～です[ね]。",
+    romaji: ["mō ~ desu [ne]"],
+    meaning: ["Đã ~ rồi nhỉ", "Đã ~ rồi, đúng không ạ?"]
+},
+{
+    japanese: "そろそろ失礼します。",
+    hiragana: "そろそろしつれいします。",
+    romaji: ["sorosoro shitsurei shimasu"],
+    meaning: ["Đã đến lúc tôi phải xin phép", "Tôi xin phép về trước"]
+},
+{
+    japanese: "またいらっしゃってください。",
+    hiragana: "またいらっしゃってください。",
+    romaji: ["mata irasshatte kudasai"],
+    meaning: ["Lần sau anh/chị lại đến chơi nhé"]
+},
+{
+    japanese: "富士山",
+    hiragana: "ふじさん",
+    romaji: ["Fujisan"],
+    meaning: ["Núi Phú Sĩ (ngọn núi cao nhất Nhật Bản)"]
+},
+{
+    japanese: "琵琶湖",
+    hiragana: "びわこ",
+    romaji: ["Biwako"],
+    meaning: ["Hồ Biwa"]
+},
+{
+    japanese: "シャンハイ",
+    hiragana: "シャンハイ",
+    romaji: ["Shanhai"],
+    meaning: ["Thượng Hải (上海)"]
+},
+{
+    japanese: "「七人の侍」",
+    hiragana: "「しちにんのさむらい」",
+    romaji: ["Shichinin no Samurai"],
+    meaning: ["Bảy chàng võ sĩ Samurai (tên phim kinh điển của đạo diễn Kurosawa Akira)"]
+},
+{
+    japanese: "金閣寺",
+    hiragana: "きんかくじ",
+    romaji: ["Kinkakuji"],
+    meaning: ["Chùa Kinkaku-ji", "Chùa Vàng"]
+}
 ];
 
 // ==========================================
