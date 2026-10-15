@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="icon" type="image/png" href="R.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Maze - Mê Cung Từ Vựng Tiếng Nhật</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts cho font chữ dễ thương và hiện đại -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Tiêu đề game -->
+
+
+        <main class="game-main-content">
+            <!-- Phần bàn mê cung -->
+            <section class="maze-section">
+                <h2>Bàn Mê Cung</h2>
+                <div class="maze-grid" id="maze-grid">
+                    <!-- Các ô mê cung sẽ được sinh tự động bằng JavaScript -->
+                </div>
+            </section>
+
+            <!-- Phần điều khiển và câu hỏi -->
+            <section class="control-section">
+                <!-- Khu vực tung xúc xắc -->
+                <div class="dice-box" id="dice-box">
+                    <h3>Lượt Tung Xúc Xắc</h3>
+                    <div class="dice-display" id="dice-display">🎲</div>
+                    <div class="dice-result-text" id="dice-result-text">Nhấn nút bên dưới để tung xúc xắc!</div>
+                    <button class="btn btn-primary" id="btn-roll">Tung Xúc Xắc</button>
+                </div>
+
+                <!-- Khu vực câu hỏi từ vựng (ẩn đi cho đến khi tung xúc xắc) -->
+                <div class="question-box hidden" id="question-box">
+                    <div class="question-header">
+                        <h3>Thử Thách Từ Vựng</h3>
+                        <div class="hint-toggle-wrapper">
+                            <label class="switch">
+                                <input type="checkbox" id="toggle-hint">
+                                <span class="slider round"></span>
+                            </label>
+                            <span>Hiện gợi ý Hiragana</span>
+                        </div>
+                    </div>
+
+                    <div class="vocab-display">
+                        <div class="kanji-word" id="vocab-kanji">--</div>
+                        <div class="hiragana-hint hidden" id="vocab-hiragana">--</div>
+                    </div>
+
+                    <form id="answer-form" class="answer-form" autocomplete="off">
+                        <div class="input-group">
+                            <label for="input-romaji">1. Nhập Romaji (cách đọc):</label>
+                            <input type="text" id="input-romaji" placeholder="Ví dụ: nareru" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="input-meaning">2. Nhập nghĩa tiếng Việt:</label>
+                            <input type="text" id="input-meaning" placeholder="Ví dụ: quen với" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-success" id="btn-submit">Kiểm Tra Đáp Án</button>
+                    </form>
+                </div>
+
+                <!-- Khu vực phản hồi kết quả lượt đi -->
+                <div class="feedback-box hidden" id="feedback-box">
+                    <h3>Kết Quả Lượt Đi</h3>
+                    <div id="feedback-content" class="feedback-content"></div>
+                    <button class="btn btn-primary" id="btn-next-turn">Lượt Tiếp Theo</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Màn hình chiến thắng -->
+        <div class="modal-overlay hidden" id="victory-modal">
+            <div class="modal-content">
+                <h2>🎉 Chúc Mừng! 🎉</h2>
+                <p>Bạn đã xuất sắc về đích ở ô 100!</p>
+                <div class="victory-stats">
+                    <p>Tổng điểm: <strong id="final-score">0</strong></p>
+                    <p>Số câu đã làm: <strong id="final-questions">0</strong></p>
+                    <p>Chuỗi đúng dài nhất: <strong id="final-streak">0 🔥</strong></p>
+                </div>
+                <button class="btn btn-primary" id="btn-restart">Chơi Lại Từ Đầu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
