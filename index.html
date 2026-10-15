@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <link rel="icon" type="image/png" href="R.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocabulary Maze - Mê Cung Từ Vựng Tiếng Nhật</title>
@@ -12,7 +11,33 @@
 <body>
     <div class="app-container">
         <!-- Tiêu đề game -->
+        <header class="game-header">
+            <h1>🌸 Vocabulary Maze 🌸</h1>
+            <p>Chinh phục mê cung 100 ô bằng vốn từ vựng tiếng Nhật của bạn!</p>
+        </header>
 
+        <!-- Phần thống kê (Stats) -->
+        <section class="stats-panel">
+            <div class="stat-card">
+                <span class="stat-label">Vị trí</span>
+                <span class="stat-value" id="current-pos">0 / 100</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Điểm số</span>
+                <span class="stat-value" id="score">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Chuỗi đúng</span>
+                <span class="stat-value" id="streak">0 🔥</span>
+            </div>
+            <div class="stat-card progress-card">
+                <span class="stat-label">Tiến độ</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar-fill" id="progress-fill"></div>
+                </div>
+                <span class="progress-text" id="progress-text">0%</span>
+            </div>
+        </section>
 
         <main class="game-main-content">
             <!-- Phần bàn mê cung -->
